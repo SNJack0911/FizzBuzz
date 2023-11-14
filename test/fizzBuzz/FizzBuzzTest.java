@@ -17,7 +17,7 @@ class FizzBuzzTest {
 	void test_Not_Fizz_Buzz() {
 		assertEquals("1", f.fizzBuzz(1));
 		assertEquals("2", f.fizzBuzz(2));
-		assertEquals("4",f.fizzBuzz(4));
+		assertEquals("4", f.fizzBuzz(4));
 	}
 	
 	@Test
