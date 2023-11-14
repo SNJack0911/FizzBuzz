@@ -14,6 +14,20 @@ class FizzBuzzTest {
 	}
 
 	@Test
+	void test_ALl() {
+		for (int i=0;i<100;i++) {
+			if ((i%3==0)&&(i%5==0)) {
+				assertEquals("fizzbuzz",f.fizzBuzz(i));
+			}else if (i%3==0) {
+				assertEquals("fizz", f.fizzBuzz(i));
+			}else if (i%5==0) {
+				assertEquals("buzz", f.fizzBuzz(i));
+			}else {
+				assertEquals(String.valueOf(i),f.fizzBuzz(i));
+			}
+		}
+	}
+	@Test
 	void test_Not_Fizz_Buzz() {
 		assertEquals("1", f.fizzBuzz(1));
 		assertEquals("2", f.fizzBuzz(2));
